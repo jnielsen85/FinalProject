@@ -31,7 +31,7 @@ const redirectToCheckout = async event => {
 
 const Checkout = () => {
   return (
-    <button style={buttonStyles} onClick={redirectToCheckout}>
+    <button className='button is-primary is-outlined' onClick={redirectToCheckout}>
       Make Payment
     </button>
   )

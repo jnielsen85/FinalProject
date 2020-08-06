@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import SearchBox from '../SearchBox'
+import Checkout from '../Checkout'
 
 const NavBar = ({ toggleNavbar, isActive }) => (
   <StaticQuery
@@ -17,7 +18,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
           <Link to='/' className='navbar-item'>
             <strong>JNS Surfboards</strong>
           </Link>
-          <button
+          <button        //hamburger button for mobile.
             className={`button navbar-burger ${isActive ? 'is-active' : ''}`}
             data-target='navMenu'
             onClick={toggleNavbar}
@@ -26,6 +27,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             <span />
             <span />
           </button>
+
         </div>
         <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
 
@@ -40,17 +42,9 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             <Link className='navbar-item' to='/blog'>
                             Blog
             </Link>
-            <div className='navbar-item'>
-              <div className='field is-grouped'>
-                <p className='control'>
-                  <Link
-                    className='button is-primary is-outlined'
-                    to='/contact'>
+            <Link className='navbar-item' to='/contact'>
                             Contact Us
-                  </Link>
-                </p>
-              </div>
-            </div>
+            </Link>
             <div className='navbar-item'>
               <div className='field is-grouped'>
                 <p className='control'>
@@ -59,6 +53,13 @@ const NavBar = ({ toggleNavbar, isActive }) => (
                     to='/order'>
                             Custom Order
                   </Link>
+                </p>
+              </div>
+            </div>
+            <div className='navbar-item'>
+              <div className='field is-grouped'>
+                <p className='control'>
+                  <Checkout />
                 </p>
               </div>
             </div>
