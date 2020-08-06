@@ -1,7 +1,8 @@
 import React from 'react'
 import { Formik, Field } from 'formik'
-import { naviagte } from 'gatsby-link'
+import { navigate } from 'gatsby-link'
 import validationSchema from './validationSchema'
+import faker from 'faker'
 
 const encode = (data) => {
   return Object.keys(data)
@@ -15,7 +16,7 @@ const OrderForm = () => {
       initialValues={{
         name: '',
         last_name: '',
-        email: '',
+        email: faker.internet.email(),
         confirm_email: '',
         address: '',
         city: '',
@@ -89,7 +90,7 @@ const OrderForm = () => {
         </div>
 
         <div className='field'>
-          <label className='label'>Email</label>
+          <label className='label'>Confirm Email</label>
           <div className='control'>
             <Field className='input' type='email' placeholder='Email' name='confirm_email' id='confirm_email' />
           </div>
@@ -123,7 +124,7 @@ const OrderForm = () => {
         <div className='field'>
           <label className='label'>Postcode</label>
           <div className='control'>
-            <Field className='input' type='text' placeholder='Postcode' name='postcode' id='postcode' />
+            <Field className='input' type='text' placeholder='postcode' name='postcode' id='postcode' />
           </div>
           {touched.postcode && errors.postcode && <small className='has-text-danger'>{errors.postcode}</small>}
         </div>

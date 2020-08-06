@@ -51,6 +51,17 @@ const NavBar = ({ toggleNavbar, isActive }) => (
                 </p>
               </div>
             </div>
+            <div className='navbar-item'>
+              <div className='field is-grouped'>
+                <p className='control'>
+                  <Link
+                    className='button is-primary is-outlined'
+                    to='/order'>
+                            Custom Order
+                  </Link>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </nav>

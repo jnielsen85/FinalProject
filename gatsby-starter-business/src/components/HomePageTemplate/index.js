@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
+import Checkout from '../Checkout'
 import PropTypes from 'prop-types'
 
 const HomePageTemplate = ({
@@ -48,6 +49,7 @@ const HomePageTemplate = ({
                 <Offerings gridItems={offerings.blurbs} />
                 <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
                 <Testimonials testimonials={testimonials} />
+                <Checkout />
               </div>
             </div>
           </div>
