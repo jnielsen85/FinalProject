@@ -1,6 +1,7 @@
 import React from 'react'
 import Content from '../Content'
 import PropTypes from 'prop-types'
+import Checkout from '../Checkout'
 
 const PaymentPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -29,6 +30,7 @@ const PaymentPageTemplate = ({ title, content, contentComponent }) => {
               <div className='section'>
                 <PageContent className='content' content={content} />
               </div>
+                <Checkout />
             </div>
           </div>
         </div>

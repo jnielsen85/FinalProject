@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import SearchBox from '../SearchBox'
-import Checkout from '../Checkout'
+
 
 const NavBar = ({ toggleNavbar, isActive }) => (
   <StaticQuery
@@ -59,7 +59,11 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             <div className='navbar-item'>
               <div className='field is-grouped'>
                 <p className='control'>
-                  <Checkout />
+                  <Link
+                    className='button is-primary is-outlined'
+                    to='/payment'>
+                            Make Payment
+                  </Link>
                 </p>
               </div>
             </div>

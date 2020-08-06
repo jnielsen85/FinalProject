@@ -33,15 +33,15 @@ const ArticlePage = ({ data }) => {
                 tags={post.frontmatter.tags}
                 title={post.frontmatter.title}
               />
-              <Share
-                title={post.frontmatter.title}
-                slug={post.fields.slug}
-                excerpt={post.frontmatter.meta_description}
-              />
               <hr />
               <Disqus
                 title={post.frontmatter.title}
                 slug={post.fields.slug}
+              />
+              <Share
+                title={post.frontmatter.title}
+                slug={post.fields.slug}
+                excerpt={post.frontmatter.meta_description}
               />
             </div>
           </div>
