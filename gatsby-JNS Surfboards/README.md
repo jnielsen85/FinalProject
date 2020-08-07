@@ -59,3 +59,13 @@ You can connect to a repo or even have netlify create a new repo in your Git Hub
 
 ### CMS
 Utilised in the site build, but without a full understanding.  Simplifies site updating through Netlify CMS. Identity and Authentication miust be set up [How To Set Up Netlify CMS](https://www.netlifycms.org/docs/add-to-your-site/).
+
+## Dependancies
+
+A lot of dependancies used in the original starter code.  33 in fact.  Some notable mentions that i got hands on with:
+
+* [Gatsby Link API](https://www.gatsbyjs.org/docs/gatsby-link/): enables linking to internal pages as well as a powerful performance feature called preloading
+* [Formik](https://formik.org/docs/overview): Formik is a small library that helps you with the 3 most annoying parts: Getting values in and out of form state, Validation and error messages, Handling form submission
+* [Gatsby-plugin-netlify-cms](https://www.gatsbyjs.org/packages/gatsby-plugin-netlify-cms/): Netlify CMS is a React single page app for editing git based content via API. Its built for non-technical and technical editors alike.  STILL learning to utilise.
+* [Yup](https://www.npmjs.com/package/yup): A JavaScript schema builder for value parsing and validation.  Easy to use and time saving.
+* [gatsby-plugin-elasticlunr-search](https://www.npmjs.com/package/@gatsby-contrib/gatsby-plugin-elasticlunr-search):  This plugin enables search integration via elastic lunr. Content is indexed and then made available via graphql.  Used to allow search features for for things like page title and page. NOTE:  Havent got my search full working. 
