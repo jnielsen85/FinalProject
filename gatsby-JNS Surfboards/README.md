@@ -10,11 +10,12 @@ Proper content is yet to be uploaded.  'Lorem Ipsum' text is present through out
 
 ## Features
 * Complete Business Website Suite - Home Page, About Page, Gallery, Contact Page, Custom Board Order Page, Search and Payment page.
+* Netlify for hosting
 * Netlify CMS for Content Management
-* SEO Friendly (Sitemap, Schemas, Meta Tags, GTM etc)
-* Bulma and Sass Support for styling
+* Bulma and Sass Support for styling -- UNLIKELY TO USE AGAIN. 
 * Elastic-Lunr Search (NEW)
 * Contact and New Board Order Form (Netlify Forms)
+* SEO Friendly (Sitemap, Schemas, Meta Tags)
 
 ## Prerequisite
 * Node
