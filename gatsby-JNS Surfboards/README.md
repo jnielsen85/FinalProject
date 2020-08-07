@@ -1,96 +1,60 @@
-# gatsby-starter-business
-A [Gatsby v2](https://www.gatsbyjs.org/) and [Netlify CMS](https://www.netlifycms.org) powered generic business website.
+# gatsby-JNS Surfboards
+A [Gatsby v2](https://www.gatsbyjs.org/) and [Netlify CMS](https://www.netlifycms.org) powered site for JNS Surfboards.  A local shaper of custom boards from the Gold Coast QLD.  
 
-It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
+It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.   [Stripe Checkout](https://stripe.com/en-au/payments/checkout) is used to faciliate payment collection through the site.  Currently JNS Surfboards utitlizes the client-only integration, whereby products are defined directly in the stripe dashboard and referenced by ID on the client side. This allows easy integration of checkout into the site WITHOUT any server-side code.
 
-## Demo
-[Gatsby Starter Business](https://gatsby-starter-business.netlify.com)
+## Live Site
+https://hopeful-raman-c3c7d5.netlify.app/
+
+Proper content is yet to be uploaded.  'Lorem Ipsum' text is present through out and images reused.
 
 ## Features
-* Complete Business Website Suite - Home Page, About Page, Pricing Page, Contact Page and Blog
+* Complete Business Website Suite - Home Page, About Page, Gallery, Contact Page, Custom Board Order Page, Search and Payment page.
 * Netlify CMS for Content Management
 * SEO Friendly (Sitemap, Schemas, Meta Tags, GTM etc)
 * Bulma and Sass Support for styling
-* Progressive Web App & Offline Support
-* Tags and RSS Feed for Blog
-* Disqus and Share Support
 * Elastic-Lunr Search (NEW)
-* Pagination (NEW)
-* Contact Form (Netlify Forms)
-* Easy Configuration using `config.js` file
+* Contact and New Board Order Form (Netlify Forms)
 
 ## Prerequisite
 * Node
 * Gatsby CLI (globally installed)
 
-## Getting Started
-Create your own project with Gatsby CLI:
-```shell
-gatsby new yourbusinessname https://github.com/v4iv/gatsby-starter-business.git 
-```
 
-## Available Scripts
+#Using gatsby
+A steep learning curve initially, but worth the investment in the end.
 
-### Develop
-Start a hot-reloading development environment accessible at `localhost:8000`
+## Develop
+Runs a server in the background, enabling useful features like hot-reloading development environment (served on `localhost:8000`) and Gatsby’s data explorer [GraphiQL](https://www.gatsbyjs.org/docs/running-queries-with-graphiql/).
 ```shell
-yarn start
+gatsby develop
 ```
 
 ### Build
-Get an optimized production build for your site generating static HTML and per-route JavaScript code bundles.
+Creates a version of your site with production-ready optimizations like packaging up your site’s config, data, and code, and creating all the static HTML pages that eventually get rehydrated into a React application into a 'Public' folder.  
 ```shell
-yarn build
+gatsby build
 ```
 
 ### Serve
-gatsby serve — Gatsby starts a local HTML server for testing your built site.
+Starts a local HTML server for testing your built site.
 ```shell
-yarn serve
+gatsby serve
 ```
 
-### Lint
-Lint the code according to eslintrc file, for consistency.
-```shell
-yarn lint
-```
-
-### Clean
-Remove the .cache and public for a scratch compile.
-```shell
-yarn clean
-```
-
-## Configuration
-To personalize and configure this Starter open `config.js` file and replace the default values.
-
-```javascript
-module.exports = {
-  siteTitle: 'Gatsby Starter Business', // Site title.
-  siteTitleAlt: 'Business', // Alternative site title for SEO.
-  siteLogo: '/icons/icon-512x512.png', // Logo used for SEO and manifest.
-  siteUrl: 'https://gatsby-starter-business.netlify.com', // Domain of your website without pathPrefix.
-  // Do not use trailing slash!
-  pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-business/.
-  siteDescription: 'Leverage Gatsby Business Starter for your Business.', // Website description used for RSS feeds/meta description tag.
-  siteRss: '/rss.xml',
-  siteFBAppID: '', // FB Application ID for using app insights
-  googleTagManagerID: '', // GTM tracking ID.
-  disqusShortname: 'gatsby-business-starter', // Disqus shortname.
-  userName: 'Vaibhav Sharma',
-  userTwitter: 'vaibhaved',
-  userLocation: 'Delhi NCR, India',
-  userDescription: '',
-  copyright: 'Copyright © Gatsby Starter Business 2018. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
-  themeColor: '#00d1b2', // Used for setting manifest and progress theme colors.
-  backgroundColor: '#ffffff', // Used for setting manifest background color.
-}
-
-```
 
 ## Deployment
-Clicking the button will ask for authentication via Github, which will create a repo in your github account with this starter. Then, it will build and deploy the site to Netlify.
+### Option 1: Deployment without connecting to Git.
+After Running
+```shell
+gatsby build
+```
+Deployment without connecting to Gitto netlify by is as simple as Dragging and Dropping the public folder into Netlify's deployment dashboard.
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/v4iv/gatsby-starter-business&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+### Option 2: New Site from Git
 
-You can read up on how to set up Identity(Authentication for CMS User) here [How To Set Up Netlify CMS](https://www.netlifycms.org/docs/add-to-your-site/)
+You can connect to a repo or even have netlify create a new repo in your Git Hub account. From there just push your changes to GitHub and Netlify will automatically deploy them to their global CDN.
+
+
+##CMS
+Utilised in the site build, but without a full understanding.  Simplifies site updating through Netlify CMS. Identity and Authentication miust be set up [How To Set Up Netlify CMS](https://www.netlifycms.org/docs/add-to-your-site/).
