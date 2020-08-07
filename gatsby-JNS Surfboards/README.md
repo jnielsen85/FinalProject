@@ -57,9 +57,8 @@ Deployment without connecting to Gitto netlify by is as simple as Dragging and D
 
 You can connect to a repo or even have netlify create a new repo in your Git Hub account. From there just push your changes to GitHub and Netlify will automatically deploy them to their global CDN.
 
-
-### CMS
-Utilised in the site build, but without a full understanding.  Simplifies site updating through Netlify CMS. Identity and Authentication miust be set up [How To Set Up Netlify CMS](https://www.netlifycms.org/docs/add-to-your-site/).
+## CMS
+Netlify CMS Utilised in the site build.  Simplifies site updating. Identity and Authentication must be set up [How To Set Up Netlify CMS](https://www.netlifycms.org/docs/add-to-your-site/).  Actually utilising this is on TO DO List.  
 
 ## Dependancies
 
