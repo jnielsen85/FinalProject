@@ -9,7 +9,7 @@ https://hopeful-raman-c3c7d5.netlify.app/
 Proper content is yet to be uploaded.  'Lorem Ipsum' text is present through out and images reused.
 
 ## Features
-* Complete Business Website Suite - Home Page, About Page, Gallery, Contact Page, Custom Board Order Page, Search and Payment page.
+* Home Page, About Page, Gallery, Contact Page, Custom Board Order Page, Search and Payment page.
 * Netlify for hosting
 * Netlify CMS for Content Management
 * Bulma and Sass Support for styling -- UNLIKELY TO USE AGAIN. 
